@@ -1,0 +1,56 @@
+/* VideoPlayerPage.css */
+
+/* Contenedor principal del reproductor de video */
+.video-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ padding: 20px;
+ box-sizing: border-box;
+ text-align: center; /* Centrar el texto */
+}
+
+/* Estilo del video */
+video {
+ width: 80%; /* Tamaño del video ajustable */
+ max-width: 1000000px;
+ height: 600px;
+ border: 5px solid #343a40; /* Borde oscuro alrededor del video */
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor del video */
+}
+
+/* Título del video */
+.video-title {
+ margin-top: 20px;
+ font-size: 24px;
+ font-weight: bold;
+ color: #070708; /* Texto oscuro */
+}
+
+/* Descripción del video */
+.video-description {
+ margin-top: 10px;
+ font-size: 18px;
+ color: #040404; /* Texto gris */
+ max-width: 800px;
+}
+
+/* Botón personalizado */
+.custom-button {
+ margin-top: 20px;
+ padding: 10px 20px;
+ font-size: 16px;
+ color: #fff;
+ background-color: #007bff; /* Botón azul */
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+ background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
