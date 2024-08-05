@@ -217,7 +217,6 @@ function AsNavFor() {
               <Card.Title>{d.name}</Card.Title>
               <Card.Text className="movie-review">{d.review}</Card.Text>
             </Card.Body>
-            <Card.Footer>
             <Button
                 className="play-button"
                 variant="primary"
@@ -225,7 +224,6 @@ function AsNavFor() {
               >
                 Play
               </Button>
-            </Card.Footer>
           </Card>
         ))}
       </Slider>

@@ -3,7 +3,7 @@
 /* Estilos para el contenedor del slider */
 .slider-container {
  width: 95%;
- margin: 0 auto;
+ margin: 15px, 30px;
  background-color: #7f2ba9;
  padding: 20px;
  border-radius: 10px;
@@ -27,8 +27,8 @@
 
 /* Estilos para las tarjetas */
 .movie-card {
- background-color: #ffffff;
- margin: 10px;
+ background-color: #ebc3f3;
+ margin: 20px;
  border-radius: 10px;
  position: relative; /* Necesario para posicionar el botón sobre la imagen */
 }
