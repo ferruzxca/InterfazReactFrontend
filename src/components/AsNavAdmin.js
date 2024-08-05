@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
-
 import "./AsNavAdmin.css"; // Asegúrate de tener estilos personalizados
 
 function AsNavAdmin() {
