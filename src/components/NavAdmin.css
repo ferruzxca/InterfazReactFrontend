@@ -1,0 +1,43 @@
+/* frontend/src/components/NavAdmin.css */
+
+.slider-container {
+  padding: 20px;
+  background-color: #b563ca; /* Color de fondo */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #007bff; /* Color del logo */
+}
+
+.movie-card {
+  margin: 15px;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.play-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.movie-review {
+  font-size: 0.9em;
+  color: #555;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}

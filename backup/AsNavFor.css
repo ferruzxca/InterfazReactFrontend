@@ -1,0 +1,82 @@
+/* AsNavFor.css */
+
+/* Estilos para el contenedor del slider */
+.slider-container {
+ width: 95%;
+ margin: 15px, 30px;
+ background-color: #7f2ba9;
+ padding: 20px;
+ border-radius: 10px;
+ overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+}
+
+.img-logo{
+ width: 130%;
+ height: 250px; /* Ajusta la altura según sea necesario */
+ /*position: relative;*/
+ justify-content: top;
+ align-items: top;
+ background: url('LogoMorado.jpg') no-repeat top center fixed;
+}
+
+.nav-image{
+ width: 100%;
+ height: 600px; /* Ajusta la altura según sea necesario */
+ position: relative;
+}
+
+/* Estilos para las tarjetas */
+.movie-card {
+ background-color: #ebc3f3;
+ margin: 10px;
+ border-radius: 30px;
+ position: relative; /* Necesario para posicionar el botón sobre la imagen */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.movie-image {
+ position: relative;
+ width: 100%;
+ height: 500px; /* Ajusta la altura según sea necesario */
+ object-fit: cover;
+}
+
+.movie-review {
+ width: 100%;
+ height: 150px; /* Ajusta la altura según sea necesario */
+}
+
+/* Estilo para el contenedor del botón sobre la imagen */
+.image-container {
+ width: 100%;
+ height: 100%; /* Ajusta la altura según sea necesario */
+ position: relative;
+}
+
+/* Estilos para el botón en la imagen */
+.play-button {
+ position: absolute;
+ bottom: 20px;
+ right: 10px;
+ background-color: #28a745;
+ border-color: #28a745;
+ color: white;
+}
+
+/* Estilos para el botón en la imagen (hover) */
+.play-button:hover {
+ background-color: #218838;
+ border-color: #1e7e34;
+}
+
+/* Estilos generales de la página */
+body {
+ width: 95%;
+ background-color: #844ddd; /* Color de fondo de la página */
+}
+
+/* Estilos para el encabezado de la sección */
+
+.slider-container >div {
+margin:0 10px;
+}

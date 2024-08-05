@@ -1,0 +1,71 @@
+/* Archivo: src/SubscriptionUpdate.css */
+
+/* Contenedor principal */
+.update-subscription-container {
+  background: #f0f2f5; /* Fondo claro para contrastar */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 100%; /* Hacer que el contenedor ocupe todo el ancho */
+}
+
+/* Estilo del card */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Hacer que la tarjeta ocupe todo el ancho del contenedor */
+  margin-bottom: 2rem; /* Separación entre tarjetas */
+}
+
+/* Título del card */
+.card-title {
+  color: #6a1b9a; /* Morado */
+  font-weight: bold;
+}
+
+/* Tabla */
+.table {
+  background-color: #ffffff; /* Fondo blanco para la tabla */
+  width: 100%; /* Ocupa todo el ancho de la tarjeta */
+}
+
+/* Filas de la tabla */
+.table tbody tr:hover {
+  background-color: #e8f5e9; /* Verde claro cuando se pasa el ratón por encima */
+  cursor: pointer;
+}
+
+/* Formulario */
+.form-control {
+  border-color: #7e57c2; /* Morado claro */
+  border-radius: 5px;
+  box-shadow: none;
+  width: 100%; /* Asegura que los inputs del formulario ocupen todo el ancho */
+}
+
+/* Botón */
+.btn-primary {
+  background-color: #d81b60; /* Rosa */
+  border-color: #d81b60;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #c2185b; /* Rosa más oscuro */
+  border-color: #c2185b;
+}
+
+/* Mensajes de éxito y error */
+.alert-success {
+  background-color: #e8f5e9; /* Verde claro */
+  border-color: #a5d6a7;
+  color: #388e3c; /* Verde oscuro */
+}
+
+.alert-danger {
+  background-color: #fddede; /* Rojo claro */
+  border-color: #f6a1a1;
+  color: #c62828; /* Rojo oscuro */
+}

@@ -1,82 +1,147 @@
-/* AsNavFor.css */
+/* frontend/src/components/AsNavFor.css */
 
-/* Estilos para el contenedor del slider */
+/* Contenedor Principal */
 .slider-container {
- width: 95%;
- margin: 15px, 30px;
- background-color: #7f2ba9;
- padding: 20px;
- border-radius: 10px;
- overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+  /* Aumenta el ancho máximo del contenedor para que la página se vea más ancha */
+  max-width: 1700px;
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 40px; /* Espacio interno adicional */
+  background-color: #1d1b41; /* Fondo morado oscuro */
+  color: #fff; /* Texto blanco para un buen contraste */
+  border-radius: 10px; /* Bordes redondeados para un look suave */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
 }
 
-.img-logo{
- width: 130%;
- height: 250px; /* Ajusta la altura según sea necesario */
- /*position: relative;*/
- justify-content: top;
- align-items: top;
- background: url('LogoMorado.jpg') no-repeat top center fixed;
+/* Logo de la Aplicación */
+.img-logo {
+  width: 100%;
+  height: 300px; /* Tamaño más grande para el logo */
+  background-image: url("LogoMorado.jpg"); /* Ruta a tu logo */
+  background-size: contain; /* Ajusta el logo dentro del espacio disponible */
+  background-repeat: no-repeat; /* Evita que el logo se repita */
+  background-position: center; /* Centra el logo */
+  margin-bottom: 40px; /* Espacio más grande debajo del logo */
 }
 
-.nav-image{
- width: 100%;
- height: 600px; /* Ajusta la altura según sea necesario */
- position: relative;
-}
-
-/* Estilos para las tarjetas */
+/* Tarjetas de Películas */
 .movie-card {
- background-color: #ebc3f3;
- margin: 20px;
- border-radius: 10px;
- position: relative; /* Necesario para posicionar el botón sobre la imagen */
+  background-color: #302f4d; /* Fondo morado más claro para las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que la imagen no sobresalga de la tarjeta */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin: 3px; /* Espaciado entre las tarjetas */
+  transition: transform 0.3s ease; /* Transición para animación */
+  width: 250px; /* Ancho fijo para todas las tarjetas */
 }
 
-/* Estilos para las imágenes dentro de las tarjetas */
-.movie-image {
- position: relative;
- width: 100%;
- height: 500px; /* Ajusta la altura según sea necesario */
- object-fit: cover;
+.movie-card:hover {
+  transform: scale(1.08); /* Aumenta el tamaño al pasar el ratón */
 }
 
+/* Imágenes de Películas */
+.movie-image,
+.nav-image {
+  width: 100%;
+  height: 600px; /* Altura fija para imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+  border-top-left-radius: 10px; /* Bordes superiores redondeados */
+  border-top-right-radius: 10px; /* Bordes superiores redondeados */
+}
+
+.nav-image {
+  height: 750px; /* Tamaño reducido al 50% para el primer carrusel */
+}
+
+/* Texto de Reseñas de Películas */
 .movie-review {
- width: 100%;
- height: 150px; /* Ajusta la altura según sea necesario */
+  font-size: 1em; /* Aumenta el tamaño del texto */
+  color: #ddd; /* Texto gris claro para mejor legibilidad */
+  margin: 10px 0;
+  height: 70px; /* Altura fija para la sección de texto */
+  overflow: hidden; /* Esconde texto desbordante */
+  text-overflow: ellipsis; /* Añade puntos suspensivos para el texto desbordante */
+  white-space: normal; /* Permite que el texto fluya a múltiples líneas */
 }
 
-/* Estilo para el contenedor del botón sobre la imagen */
-.image-container {
- width: 100%;
- height: 100%; /* Ajusta la altura según sea necesario */
- position: relative;
-}
-
-/* Estilos para el botón en la imagen */
+/* Botón de Reproducción */
 .play-button {
- position: absolute;
- bottom: 10px;
- right: 10px;
- background-color: #28a745;
- border-color: #28a745;
- color: white;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #8a2be2; /* Morado brillante para el botón */
+  border: none;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
-/* Estilos para el botón en la imagen (hover) */
 .play-button:hover {
- background-color: #218838;
- border-color: #1e7e34;
+  background-color: #6a1bbf; /* Morado más oscuro al pasar el ratón */
 }
 
-/* Estilos generales de la página */
-body {
- background-color: #844ddd; /* Color de fondo de la página */
+/* Barra de Navegación */
+.navbar {
+  margin-bottom: 30px;
+  background-color: #1d1b41; /* Fondo morado oscuro de la barra de navegación */
+  padding: 15px 30px;
 }
 
-/* Estilos para el encabezado de la sección */
-.slider-container h2,
-.slider-container h1 {
- text-align: center;
- color: #e5bdf0;
+.navbar-brand {
+  font-size: 1.8em; /* Tamaño más grande para el logo de la barra de navegación */
+  font-weight: bold;
+  color: #a94bdb; /* Color blanco para el logo */
+}
+
+.navbar-brand:hover {
+  color: #8a2be2; /* Morado brillante al pasar el ratón */
+}
+
+.nav-link {
+  color: #ccc; /* Enlaces de color gris claro */
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff; /* Color blanco al pasar el ratón */
+}
+
+/* Slick Carousel Overrides */
+.slick-slide {
+  padding: 15px; /* Espaciado interno para las diapositivas */
+  opacity: 0.7; /* Opacidad más baja para las tarjetas no seleccionadas */
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+.slick-slide.slick-center {
+  opacity: 1; /* Opacidad completa para la tarjeta central */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(141, 40, 178, 0.7); /* Fondo morado semitransparente */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #6a1bbf; /* Morado más oscuro al pasar el ratón */
+}
+
+.slick-track {
+  display: flex;
+  align-items: center; /* Asegura que las tarjetas estén centradas verticalmente */
+}
+
+.slick-slide.slick-center {
+  /* Configura la tarjeta central para que esté completamente visible */
+  transform: scale(1.1); /* Aumenta ligeramente la tarjeta central */
+  transition: transform 0.3s ease; /* Transición suave para la transformación */
 }

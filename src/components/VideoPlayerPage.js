@@ -1,6 +1,6 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import './VideoPlayerPage.css';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import "./VideoPlayerPage.css";
 
 const VideoPlayerPage = () => {
   const location = useLocation();
@@ -17,7 +17,9 @@ const VideoPlayerPage = () => {
         Your browser does not support the video tag.
       </video>
       {videoTitle && <h1 className="video-title">{videoTitle}</h1>}
-      {videoDescription && <p className="video-description">{videoDescription}</p>}
+      {videoDescription && (
+        <p className="video-description">{videoDescription}</p>
+      )}
     </div>
   );
 };

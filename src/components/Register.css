@@ -1,0 +1,149 @@
+/* frontend/src/components/Register.css */
+
+.register-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e1bee7, #8e24aa, #1e88e5);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff; /* Color de texto blanco para contraste */
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.carousel-container {
+  margin-top: 40px;
+}
+
+.carousel-item-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #444;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 30px;
+  background-color: #8e24aa;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a1b9a;
+  transform: scale(1.05);
+}
+
+.alert {
+  margin-top: 20px;
+  background-color: #ff4081;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 12px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 25px; /* Incrementado para más espacio */
+}
+
+.form-group label {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.form-group input {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff, #e1bee7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e88e5;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #444;
+  font-size: 16px;
+}
+
+.form-check-label {
+  color: #444;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.form-check-input {
+  cursor: pointer;
+  accent-color: #8e24aa;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
